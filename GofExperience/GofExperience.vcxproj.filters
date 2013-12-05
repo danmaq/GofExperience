@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\Singleton\Singleton.cpp">
+      <Filter>Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Composite\Composite.cpp">
+      <Filter>Composite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\Singleton\Singleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Composite\Component.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Composite\Composite.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Composite\Leaf.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{2acc5feb-5313-4b8b-afb8-7128cca39964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AbstractFactory">
+      <UniqueIdentifier>{c46515a1-7b20-4844-8592-0066d6c363c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Adapter">
+      <UniqueIdentifier>{a2ab9d8d-ff94-4d5f-87ed-e893f28bfbaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bridge">
+      <UniqueIdentifier>{19fe9564-14c8-453c-8599-69613b8aafe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{57d0fb38-682e-4b37-8a5f-b68878c932b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChainOfResposibility">
+      <UniqueIdentifier>{9b735a17-a2e1-439e-9839-c63e9b496a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{34c1799b-a4be-4d5e-b79e-bf3f44c4069d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Composite">
+      <UniqueIdentifier>{ac4fd449-5a52-429e-9353-808682bae1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decorator">
+      <UniqueIdentifier>{56ddcaed-6cf3-44c4-85a3-559835a1bd43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Facade">
+      <UniqueIdentifier>{a3f6ce73-966a-4cdc-ba60-43daebc3ac44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FactoryMethod">
+      <UniqueIdentifier>{40475e68-4da9-420b-9f06-ed081a59208d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flyweight">
+      <UniqueIdentifier>{da60277d-3c2b-476c-9966-a90696672c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interpreter">
+      <UniqueIdentifier>{180e901f-886a-45b0-9a92-ba8d6a8b9b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Iterator">
+      <UniqueIdentifier>{655f86cb-f664-4fa1-95bc-c59d04d3556a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mediator">
+      <UniqueIdentifier>{179da4d8-dbae-4499-abb8-46e8680d5802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memento">
+      <UniqueIdentifier>{ef8b2013-deef-4f4e-8615-557e8d762074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Prototype">
+      <UniqueIdentifier>{33f75ce2-23b1-48b1-a550-e8edca82991b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proxy">
+      <UniqueIdentifier>{46ec49a6-037c-4870-947d-80374141730f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Observer">
+      <UniqueIdentifier>{2319f554-a295-475e-87b0-0fb381e6c04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{39d6ad82-2b2d-45f2-8348-b85d8788ebc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strategy">
+      <UniqueIdentifier>{306ca638-4ec4-44d4-84a4-9112bc08d20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TemplateMethod">
+      <UniqueIdentifier>{44ed97b5-28fd-4514-a5f1-12f17c57720d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visitor">
+      <UniqueIdentifier>{edd6dcae-9a3d-4c72-b6a6-e164121ec44e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
