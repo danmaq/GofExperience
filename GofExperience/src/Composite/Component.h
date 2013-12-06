@@ -7,10 +7,11 @@ private:
 	const char *name;
 
 public:
-	Component(const Component *parent, const char *name);
+	Component(const char *name);
 	virtual ~Component() { }
 
 	inline const Component *GetParent(void) const { return parent; }
+	inline void SetParent(const Component *parent) { this->parent = parent; }
 	inline const char *GetName(void) const { return name; }
-	virtual const char *GetSuffix() const = 0;
+	virtual string GetPath(void) const;
 };

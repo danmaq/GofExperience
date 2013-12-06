@@ -1,8 +1,15 @@
 #include "../stdafx.h"
 #include "Component.h"
 
-Component::Component(const Component *parent, const char *name)
+Component::Component(const char *name)
 {
 	this->name = name;
-	this->parent = parent;
+	SetParent(NULL);
+}
+
+string Component::GetPath(void) const
+{
+	const Component *parent = GetParent();
+	string result = parent == NULL ? "/" : parent->GetPath();
+	return result + GetName();
 }

@@ -1,8 +1,12 @@
 #include "../stdafx.h"
 #include "Leaf.h"
 
-Leaf::Leaf(const Component *parent, const char *name)
-	: Component(parent, name)
+Leaf::Leaf(const char *name)
+	: Component(name)
 {
 }
 
+string Leaf::GetPath(void) const
+{
+	return Component::GetPath() + ".leaf";
+}
