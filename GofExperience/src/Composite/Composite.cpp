@@ -9,6 +9,11 @@ void SafeDelete(Component *component)
 	}
 }
 
+Composite::Composite(const Component *parent, const char *name)
+	: Component(parent, name)
+{
+}
+
 Composite::~Composite()
 {
 	Clear();

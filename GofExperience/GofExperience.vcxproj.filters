@@ -9,6 +9,12 @@
     <ClCompile Include="src\Composite\Composite.cpp">
       <Filter>Composite</Filter>
     </ClCompile>
+    <ClCompile Include="src\Composite\Component.cpp">
+      <Filter>Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Composite\Leaf.cpp">
+      <Filter>Composite</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stdafx.h" />

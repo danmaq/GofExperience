@@ -11,7 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Composite\Component.cpp" />
     <ClCompile Include="src\Composite\Composite.cpp" />
+    <ClCompile Include="src\Composite\Leaf.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Singleton\Singleton.cpp" />
     <ClCompile Include="src\stdafx.cpp">
