@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Composite.h"
+#include "Leaf.h"
 
 void SafeDelete(Component *component)
 {
@@ -47,5 +48,10 @@ void Composite::Clear(void)
 
 void CompositeTest(void)
 {
-	cout << "Not implemented." << endl;
+	Composite *root = new Composite("usr");
+	Composite *bin = new Composite("bin");
+	Leaf *perl = new Leaf("perl");
+	root->Add(bin);
+	bin->Add(perl);
+	cout << perl->GetPath().c_str() << endl;
 }
