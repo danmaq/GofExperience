@@ -1,4 +1,5 @@
 ﻿using GoFExperienceCS.Creational.Singleton;
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace GoFExperienceCS
@@ -9,6 +10,7 @@ namespace GoFExperienceCS
 		static void Main(string[] args)
 		{
 			Singleton.Instance.HelloWorld();
+			Console.ReadKey();
 		}
 	}
 }

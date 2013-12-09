@@ -5,6 +5,9 @@ namespace GoFExperienceCS.Creational.Singleton
 {
 	sealed class Singleton
 	{
+
+		private readonly string helloWorld = Resources.HELLO_WORLD;
+
 		public static Singleton Instance
 		{
 			get;
@@ -22,7 +25,7 @@ namespace GoFExperienceCS.Creational.Singleton
 
 		public void HelloWorld()
 		{
-			Console.WriteLine(Resources.HELLO_WORLD);
+			Console.WriteLine(helloWorld);
 		}
 	}
 }
