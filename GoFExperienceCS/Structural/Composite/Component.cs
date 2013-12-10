@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 namespace GoFExperienceCS.Structural.Composite
 {
 	abstract class Component
@@ -18,5 +19,7 @@ namespace GoFExperienceCS.Structural.Composite
 		{
 			this.name = name;
 		}
+
+		abstract public IEnumerable<string> GetDump();
 	}
 }

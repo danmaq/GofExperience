@@ -27,5 +27,11 @@ namespace GoFExperienceCS.Creational.Singleton
 		{
 			Console.WriteLine(helloWorld);
 		}
+
+		private static void Main()
+		{
+			Singleton.Instance.HelloWorld();
+			Console.ReadKey();
+		}
 	}
 }

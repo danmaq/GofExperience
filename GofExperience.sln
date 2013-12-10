@@ -32,6 +32,7 @@ Global
 		{076E4753-C39E-490E-A514-71E2E3485C3F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{076E4753-C39E-490E-A514-71E2E3485C3F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{076E4753-C39E-490E-A514-71E2E3485C3F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{076E4753-C39E-490E-A514-71E2E3485C3F}.Debug|Win32.Build.0 = Debug|Any CPU
 		{076E4753-C39E-490E-A514-71E2E3485C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{076E4753-C39E-490E-A514-71E2E3485C3F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{076E4753-C39E-490E-A514-71E2E3485C3F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
