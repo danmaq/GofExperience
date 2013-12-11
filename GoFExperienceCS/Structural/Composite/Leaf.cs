@@ -11,7 +11,7 @@ namespace GoFExperienceCS.Structural.Composite
 		public Leaf(string name)
 			: base(name)
 		{
-			dump = new string[] { name };
+			dump = new string[] { Name };
 		}
 
 		public override IEnumerable<string> GetDump()

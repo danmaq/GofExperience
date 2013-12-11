@@ -10,9 +10,12 @@ namespace GoFExperienceCS.Structural.Composite
 
 		private readonly ICollection<Component> childs = new List<Component>();
 
+		private readonly string[] dump;
+
 		public Composite(string name)
 			: base(name)
 		{
+			dump = new string[] { Name + "/" };
 		}
 
 		public T Add<T>(T component)
@@ -25,28 +28,25 @@ namespace GoFExperienceCS.Structural.Composite
 			return component;
 		}
 
-		public void Remove(Component component)
-		{
-			childs.Remove(component);
-		}
-
-		public void Clear()
-		{
-			childs.Clear();
-		}
-
 		public override IEnumerable<string> GetDump()
 		{
-			var path = Name + "/";
-			var r = childs.SelectMany(c => c.GetDump());
-			return r.ToArray();
+			var path = dump[0];
+			var result = childs.SelectMany(c => c.GetDump(), (co, l) => path + l);
+			return dump.Concat(result);
 		}
 
 		private static void Main()
 		{
 			var root = new Composite("");
-			root.Add(new Composite("usr"));
-			root.Add(new Composite("local")).Add(new Leaf("Hoge"));
+			root.Add(new Leaf("boot"));
+			root.Add(new Composite("bin")).Add(new Leaf("ls"));
+			var usr = root.Add(new Composite("usr"));
+			usr.Add(new Composite("local"));
+			usr.Add(new Composite("bin")).Add(new Leaf("perl"));
+			usr.Add(new Composite("share")).Add(new Leaf("redmine"));
+			usr.Add(new Composite("src"));
+			root.Add(new Leaf("sbin"));
+			root.Add(new Leaf("swap"));
 			foreach (var p in root.GetDump())
 			{
 				Console.WriteLine(p);

@@ -82,6 +82,7 @@
     <Compile Include="Structural\Composite\Component.cs" />
     <Compile Include="Structural\Composite\Composite.cs" />
     <Compile Include="Structural\Composite\Leaf.cs" />
+    <Compile Include="Structural\Facade\Facade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -122,7 +123,6 @@
     <Folder Include="Structural\Adapter\" />
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Decorator\" />
-    <Folder Include="Structural\Facade\" />
     <Folder Include="Structural\Flyweight\" />
     <Folder Include="Structural\Proxy\" />
   </ItemGroup>
