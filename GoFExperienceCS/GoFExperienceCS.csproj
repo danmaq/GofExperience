@@ -71,6 +71,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Mediator\IColleague.cs" />
+    <Compile Include="Behavioral\Mediator\IMediator.cs" />
+    <Compile Include="Behavioral\Visitor\IElement.cs" />
+    <Compile Include="Behavioral\Visitor\IVisitor.cs" />
     <Compile Include="Creational\Singleton\Singleton.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +87,9 @@
     <Compile Include="Structural\Composite\Composite.cs" />
     <Compile Include="Structural\Composite\Leaf.cs" />
     <Compile Include="Structural\Facade\Facade.cs" />
+    <Compile Include="Structural\Proxy\ISubject.cs" />
+    <Compile Include="Structural\Proxy\Proxy.cs" />
+    <Compile Include="Structural\Proxy\RealSubject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,13 +116,11 @@
     <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Interpreter\" />
     <Folder Include="Behavioral\Iterator\" />
-    <Folder Include="Behavioral\Mediator\" />
     <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\State\" />
     <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
-    <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Creational\AbstractFactory\" />
     <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\FactoryMethod\" />
@@ -124,7 +129,6 @@
     <Folder Include="Structural\Bridge\" />
     <Folder Include="Structural\Decorator\" />
     <Folder Include="Structural\Flyweight\" />
-    <Folder Include="Structural\Proxy\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
