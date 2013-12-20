@@ -71,8 +71,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Command\CommandHello.cs" />
+    <Compile Include="Behavioral\Command\ICommand.cs" />
+    <Compile Include="Behavioral\Command\Invoker.cs" />
+    <Compile Include="Behavioral\Command\Receiver.cs" />
     <Compile Include="Behavioral\Mediator\IColleague.cs" />
     <Compile Include="Behavioral\Mediator\IMediator.cs" />
+    <Compile Include="Behavioral\Memento\CareTaker.cs" />
+    <Compile Include="Behavioral\Memento\IMemento.cs" />
+    <Compile Include="Behavioral\Memento\Memento.cs" />
+    <Compile Include="Behavioral\Memento\Originator.cs" />
     <Compile Include="Behavioral\Visitor\IElement.cs" />
     <Compile Include="Behavioral\Visitor\IVisitor.cs" />
     <Compile Include="Creational\Singleton\Singleton.cs" />
@@ -113,10 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\ChainOfResponsibility\" />
-    <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Interpreter\" />
     <Folder Include="Behavioral\Iterator\" />
-    <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\State\" />
     <Folder Include="Behavioral\Strategy\" />
