@@ -81,6 +81,8 @@
     <Compile Include="Behavioral\Memento\IMemento.cs" />
     <Compile Include="Behavioral\Memento\Memento.cs" />
     <Compile Include="Behavioral\Memento\Originator.cs" />
+    <Compile Include="Behavioral\State\Context.cs" />
+    <Compile Include="Behavioral\State\Func.cs" />
     <Compile Include="Behavioral\Visitor\IElement.cs" />
     <Compile Include="Behavioral\Visitor\IVisitor.cs" />
     <Compile Include="Creational\Singleton\Singleton.cs" />
@@ -124,7 +126,6 @@
     <Folder Include="Behavioral\Interpreter\" />
     <Folder Include="Behavioral\Iterator\" />
     <Folder Include="Behavioral\Observer\" />
-    <Folder Include="Behavioral\State\" />
     <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Creational\AbstractFactory\" />
